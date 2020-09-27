@@ -11,6 +11,19 @@ menuconfig INPUT_TOUCHSCREEN
 
 if INPUT_TOUCHSCREEN
 
+config TOUCHSCREEN_MTK_GSLX68X
+	bool "GSLx68x for Mediatek package"
+	default n
+	help
+	  Say Y here if you have GSLx68x touch panel.
+
+	  If unsure, say N.
+
+	  To compile this dirver as a module, choose M here: the
+	  module will be called.
+
+#source "drivers/input/touchscreen/mediatek/GSLx68x/Kconfig"
+
 config TOUCHSCREEN_MTK
 	bool "MediaTek Touch Panel Driver"
 	help

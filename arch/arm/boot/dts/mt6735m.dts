@@ -1926,6 +1926,10 @@ firmware_class.path=/vendor/firmware loop.max_part=7";
 		};
 	};
 
+	fingerprint: fingerprint {
+ compatible = "mediatek,fingerprint";
+ };
+
 	ssw_sim1_md3_sim2_md1:ssw@4 {
 		pins_cmd0_dat {
 			pinmux = <PINMUX_GPIO163__FUNC_UIM0_CLK>;

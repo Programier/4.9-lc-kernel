@@ -1,5 +1,5 @@
 [Chip Type]
-Chip = MT6735
+Chip = MT6753
 GPIO_Pull_Sel = 1
 PMIC_Config = 1
 PMIC_ON_OFF_CONFIG = 1
@@ -118,7 +118,7 @@ GPIO95  = MODE0(GPIO95)               MODE1(BPI_BUS13)            MODE2(LTE_C2K_
 GPIO96  = MODE0(GPIO96)               MODE1(BPI_BUS14)            MODE2(LTE_C2K_BPI_BUS14)    MODE3()                     MODE4()                     MODE5(C2K_BPI_BUS14)        MODE6()                     MODE7(DBG_MON_B9)           PD  SMT_GROUP(22)
 GPIO97  = MODE0(GPIO97)               MODE1(BPI_BUS15)            MODE2(LTE_C2K_BPI_BUS15)    MODE3()                     MODE4()                     MODE5(C2K_BPI_BUS15)        MODE6()                     MODE7(DBG_MON_B10)          PD  SMT_GROUP(22)
 GPIO98  = MODE0(GPIO98)               MODE1(BPI_BUS16)            MODE2(LTE_C2K_BPI_BUS16)    MODE3()                     MODE4()                     MODE5(C2K_BPI_BUS16)        MODE6()                     MODE7(DBG_MON_B11)          PD  SMT_GROUP(22)
-GPIO99  = MODE0(GPIO99)               MODE1(BPI_BUS17)            MODE2(LTE_C2K_BPI_BUS17)    MODE3()                     MODE4()                     MODE5(C2K_BPI_BUS17)        MODE6()                     MODE7(DBG_MON_B12)          PD  SMT_GROUP(22)
+GPIO99  = MODE0(GPIO99)               MODE1(BPI_BUS17)            MODE2(LTE_C2K_BPI_BUS17)    MODE3()                     MODE4(I2S0_DI)              MODE5(C2K_BPI_BUS17)        MODE6()                     MODE7(DBG_MON_B12)          PD  SMT_GROUP(22)
 GPIO100 = MODE0(GPIO100)              MODE1(BPI_BUS18)            MODE2(LTE_C2K_BPI_BUS18)    MODE3()                     MODE4()                     MODE5(C2K_BPI_BUS18)        MODE6()                     MODE7(DBG_MON_B13)          PD  SMT_GROUP(22)
 GPIO101 = MODE0(GPIO101)              MODE1(BPI_BUS19)            MODE2(LTE_C2K_BPI_BUS19)    MODE3()                     MODE4()                     MODE5(C2K_BPI_BUS19)        MODE6()                     MODE7(DBG_MON_B14)          PD  SMT_GROUP(22)
 GPIO102 = MODE0(GPIO102)              MODE1(BPI_BUS20)            MODE2(LTE_C2K_BPI_BUS20)    MODE3()                     MODE4()                     MODE5(C2K_BPI_BUS20)        MODE6()                     MODE7(DBG_MON_B15)          PD  SMT_GROUP(22)
@@ -143,12 +143,12 @@ GPIO120 = MODE0(GPIO120)              MODE1(BPI_BUS1)             MODE2()       
 GPIO121 = MODE0(GPIO121)              MODE1(BPI_BUS2)             MODE2()                     MODE3()                     MODE4()                     MODE5()                     MODE6()                     MODE7(DBG_MON_B30)          PD  SMT_GROUP(24)
 GPIO122 = MODE0(GPIO122)              MODE1(BPI_BUS3)             MODE2()                     MODE3()                     MODE4()                     MODE5()                     MODE6()                     MODE7(DBG_MON_B31)          PD  SMT_GROUP(24)
 GPIO123 = MODE0(GPIO123)              MODE1(BPI_BUS4)             MODE2()                     MODE3()                     MODE4()                     MODE5()                     MODE6()                     MODE7(DBG_MON_B32)          PD  SMT_GROUP(24)
-GPIO124 = MODE0(GPIO124)              MODE1(BPI_BUS21)            MODE2()                     MODE3()                     MODE4()                     MODE5(DPI_HSYNC1)           MODE6(KCOL2)                MODE7(TDD_TXD)              PD  SMT_GROUP(24)
-GPIO125 = MODE0(GPIO125)              MODE1(BPI_BUS22)            MODE2()                     MODE3()                     MODE4()                     MODE5(DPI_VSYNC1)           MODE6(KROW2)                MODE7(MD_URXD)              PD  SMT_GROUP(24)
-GPIO126 = MODE0(GPIO126)              MODE1(BPI_BUS23)            MODE2()                     MODE3()                     MODE4()                     MODE5(DPI_CK1)              MODE6(I2S2_MCK)             MODE7(MD_UTXD)              PD  SMT_GROUP(24)
-GPIO127 = MODE0(GPIO127)              MODE1(BPI_BUS24)            MODE2()                     MODE3(CONN_MCU_DBGI_N)      MODE4(EXT_FRAME_SYNC)       MODE5(DPI_DE1)              MODE6(SRCLKENAI1)           MODE7(URXD0)                PD  SMT_GROUP(24)
-GPIO128 = MODE0(GPIO128)              MODE1(BPI_BUS25)            MODE2(SDA3)                 MODE3(GPS_FRAME_SYNC)       MODE4()                     MODE5(I2S2_DI)              MODE6(PTA_RXD)              MODE7(UTXD0)                PD  SMT_GROUP(24)
-GPIO129 = MODE0(GPIO129)              MODE1(BPI_BUS26)            MODE2(DISP_PWM)             MODE3(SCL3)                 MODE4()                     MODE5(I2S2_LRCK)            MODE6(PTA_TXD)              MODE7(LTE_URXD)             PD  SMT_GROUP(24)
+GPIO124 = MODE0(GPIO124)              MODE1(BPI_BUS21)            MODE2(SDA_EXTB)             MODE3()                     MODE4()                     MODE5(DPI_HSYNC1)           MODE6(KCOL2)                MODE7(TDD_TXD)              PD  SMT_GROUP(24)
+GPIO125 = MODE0(GPIO125)              MODE1(BPI_BUS22)            MODE2(SCL_EXTB)             MODE3()                     MODE4()                     MODE5(DPI_VSYNC1)           MODE6(KROW2)                MODE7(MD_URXD)              PD  SMT_GROUP(24)
+GPIO126 = MODE0(GPIO126)              MODE1(BPI_BUS23)            MODE2(SDA_EXTB)             MODE3()                     MODE4()                     MODE5(DPI_CK1)              MODE6(I2S2_MCK)             MODE7(MD_UTXD)              PD  SMT_GROUP(24)
+GPIO127 = MODE0(GPIO127)              MODE1(BPI_BUS24)            MODE2(SCL_EXTB)             MODE3(CONN_MCU_DBGI_N)      MODE4(EXT_FRAME_SYNC)       MODE5(DPI_DE1)              MODE6(SRCLKENAI1)           MODE7(URXD0)                PD  SMT_GROUP(24)
+GPIO128 = MODE0(GPIO128)              MODE1(BPI_BUS25)            MODE2()                     MODE3(GPS_FRAME_SYNC)       MODE4(SDA_EXTB)             MODE5(I2S2_DI)              MODE6(PTA_RXD)              MODE7(UTXD0)                PD  SMT_GROUP(24)
+GPIO129 = MODE0(GPIO129)              MODE1(BPI_BUS26)            MODE2(DISP_PWM)             MODE3()                     MODE4(SCL_EXTB)             MODE5(I2S2_LRCK)            MODE6(PTA_TXD)              MODE7(LTE_URXD)             PD  SMT_GROUP(24)
 GPIO130 = MODE0(GPIO130)              MODE1(BPI_BUS27)            MODE2()                     MODE3()                     MODE4()                     MODE5(I2S2_BCK)             MODE6(IRTX_OUT)             MODE7(LTE_UTXD)             PD  SMT_GROUP(24)
 GPIO131 = MODE0(GPIO131)              MODE1(LTE_PAVM0)            MODE2()                     MODE3()                     MODE4()                     MODE5()                     MODE6()                     MODE7()                     PD  SMT_GROUP(24)
 GPIO132 = MODE0(GPIO132)              MODE1(LTE_PAVM1)            MODE2()                     MODE3()                     MODE4()                     MODE5()                     MODE6()                     MODE7()                     PD  SMT_GROUP(24)
@@ -217,6 +217,12 @@ GPIO194 = MODE0(GPIO194)              MODE1(WB_RXQN)              MODE2()       
 GPIO195 = MODE0(GPIO195)              MODE1(WB_RXQP)              MODE2()                     MODE3()                     MODE4()                     MODE5()                     MODE6()                     MODE7()                     --
 GPIO196 = MODE0(GPIO196)              MODE1(WB_RXIN)              MODE2()                     MODE3()                     MODE4()                     MODE5()                     MODE6()                     MODE7()                     --
 GPIO197 = MODE0(GPIO197)              MODE1(WB_RXIP)              MODE2()                     MODE3()                     MODE4()                     MODE5()                     MODE6()                     MODE7()                     --
+GPIO198 = MODE0(GPIO198)              MODE1(MSDC2_CMD)            MODE2(SDA1)                 MODE3(C2K_UART0_RXD)        MODE4(C2K_TMS)              MODE5(ANT_SEL6)             MODE6()                     MODE7(DM_OTMS)              PD  SMT_GROUP(42)
+GPIO199 = MODE0(GPIO199)              MODE1(MSDC2_CLK)            MODE2(SCL1)                 MODE3(C2K_UART0_TXD)        MODE4(C2K_TCK)              MODE5(ANT_SEL7)             MODE6(TDD_TXD)              MODE7(DM_OTCK)              PD  SMT_GROUP(43)
+GPIO200 = MODE0(GPIO200)              MODE1(MSDC2_DAT0)           MODE2(ANT_SEL6)             MODE3(GPS_FRAME_SYNC)       MODE4(C2K_TDI)              MODE5(UTXD0)                MODE6()                     MODE7(DM_OTDI)              PD  SMT_GROUP(44)
+GPIO201 = MODE0(GPIO201)              MODE1(MSDC2_DAT1)           MODE2(ANT_SEL3)             MODE3(PWM0)                 MODE4(C2K_TDO)              MODE5(URXD0)                MODE6()                     MODE7(DM_OTDO)              PD  SMT_GROUP(44)
+GPIO202 = MODE0(GPIO202)              MODE1(MSDC2_DAT2)           MODE2(ANT_SEL4)             MODE3(SDA2)                 MODE4(C2K_NTRST)            MODE5(UTXD1)                MODE6(KCOL3)                MODE7(DM_JTINTP)            PD  SMT_GROUP(44)
+GPIO203 = MODE0(GPIO203)              MODE1(MSDC2_DAT3)           MODE2(ANT_SEL5)             MODE3(SCL2)                 MODE4(C2K_RTCK)             MODE5(URXD1)                MODE6(KCOL6)                MODE7()                     PD  SMT_GROUP(44)
 
 [GPO]
 
@@ -262,7 +268,7 @@ KEY_DESIGN_NOTICES = "Please notice that the circuit design are different betwee
 
 [I2C]
 I2C_COUNT = 32
-CHANNEL_COUNT = 4
+CHANNEL_COUNT = 5
 
 [CLK_BUF]
 CLK_BUF_COUNT = 4
